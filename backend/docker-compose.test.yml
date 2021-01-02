@@ -1,0 +1,13 @@
+version: "3"
+ 
+services:
+  sut:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    command: pytest ./backend/tests
+    environment: 
+      - FLASK_ENV=TEST
+      - PATH=$PATH:/backend/webdrivers
+    ports:
+      - 5000:5000
