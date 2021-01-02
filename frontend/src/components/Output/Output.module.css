@@ -1,0 +1,34 @@
+.output {
+    margin-top: 2vh;
+    text-align: left;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.wrapper {
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-style: solid;
+    color: black;
+    margin-bottom: 1vh;
+}
+
+.category {
+    font-size: large;
+    text-decoration: underline;
+}
+
+.item {
+    font-size: medium;
+    word-wrap: break-word;
+}
+
+.bullet {
+    color: red;
+}
+
+.error {
+    text-align: center;
+}

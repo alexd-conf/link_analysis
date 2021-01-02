@@ -1,0 +1,18 @@
+.header {
+    margin-top: 5vh;
+}
+
+.title {
+    font-size: calc(50px + 2vmin);
+    color: black;
+}
+
+.links {
+    margin-top: 2vh;
+    color: black;
+}
+
+.information {
+    margin-top: 2vh;
+    color: black;
+}
