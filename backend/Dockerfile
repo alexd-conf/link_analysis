@@ -14,16 +14,9 @@ COPY . /backend
 # install dependencies
 RUN pip3 install -r ./backend/requirements.txt
 
-# set environment variables
-# ENV FLASK_ENV=PRODUCTION
-# for webdriver
-# ENV PATH=$PATH:/backend/webdrivers
-
 # install browser
+RUN apt-get install -y chromium-common=83.0.4103.116-1~deb10u3
 RUN apt-get install -y ./backend/browser/chromium_83.0.4103.116-1_deb10u3_amd64.deb
-
-# expose port
-# EXPOSE 5000
 
 # run with uwsgi application server
 RUN pip3 install uwsgi
