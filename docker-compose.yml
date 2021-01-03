@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: ./backend  
+      dockerfile: Dockerfile
+    environment: 
+      - FLASK_ENV=PRODUCTION
+      - PATH=$PATH:/backend/webdrivers
+    ports:
+      - 5000:5000
+  frontend:
+    build:
+      context: .
+      dockerfile: ./frontend/Dockerfile
+    ports:
+      - 80:80
