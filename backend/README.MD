@@ -9,4 +9,5 @@ Install Chromium.<br>
 Download your system's appropriate version of the chromedriver, name it chromedriver_dev, and place that binary in the 'backend/webdrivers/' directory.<br>
 Navigate to the 'backend' directory.<br>
 <code>pip3 install -r requirements.txt</code><br>
+<code>pytest</code><br>
 <code>flask run</code>
