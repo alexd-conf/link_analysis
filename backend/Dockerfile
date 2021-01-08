@@ -26,7 +26,7 @@ RUN pip3 install -r ./requirements.txt
 
 # install browser
 RUN apt-get install -y chromium-common=83.0.4103.116-1~deb10u3
-RUN dpkg -i -y ./browser/chromium_83.0.4103.116-1_deb10u3_amd64.deb
+RUN dpkg -i ./browser/chromium_83.0.4103.116-1_deb10u3_amd64.deb
 
 WORKDIR /
 
