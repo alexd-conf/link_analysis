@@ -6,7 +6,6 @@ const Header = () => (
     <div className={styles.title} data-testid="Title">Link Analysis</div>
     <div className={styles.links} data-testid="Links">
       <div>{process.env.REACT_APP_GITHUB_URL}</div>
-      <div>{process.env.REACT_APP_DOCKERHUB_URL}</div>
     </div>
     <div className={styles.information} data-testid="Information">
       <div>1) Enter a URL into the Analysis Bar.</div>
