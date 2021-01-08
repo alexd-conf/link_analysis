@@ -1,10 +1,14 @@
 # set up frontend
-FROM node:15 as build-stage
+FROM node as build-stage
 
 WORKDIR /frontend
 
 # copy over project
-COPY ./frontend .
+COPY ./frontend/public ./public
+COPY ./frontend/src ./src
+COPY ./frontend/.env.production .
+COPY ./frontend/package-lock.json .
+COPY ./frontend/package.json .
 
 # install dependencies
 RUN npm install
