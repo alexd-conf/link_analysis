@@ -11,15 +11,15 @@ RUN apt-get install -y python3
 RUN apt-get install -y python3-pip
 
 # copy project files
-COPY ./browser /browser
-COPY ./config /config
-COPY ./endpoints /endpoints
-COPY ./logs /logs
-COPY ./temp_downloads /temp_downloads
-COPY ./webdrivers /webdrivers
-COPY ./__init__.py .
-COPY ./app.py .
-COPY ./requirements.txt .
+COPY ./backend/browser /browser
+COPY ./backend/config /config
+COPY ./backend/endpoints /endpoints
+COPY ./backend/logs /logs
+COPY ./backend/temp_downloads /temp_downloads
+COPY ./backend/webdrivers /webdrivers
+COPY ./backend/__init__.py .
+COPY ./backend/app.py .
+COPY ./backend/requirements.txt .
 
 # install dependencies
 RUN pip3 install -r ./requirements.txt
