@@ -1,5 +1,4 @@
 # Link Analysis
-Link Analysis is a web application which can be accessed at https://www.linkanalysis.tools<br>
 The purpose of this application is to provide a tool which people can use to gather information about a hyperlink, most likely to check if they want to visit that hyperlink.<br>
 Please refer to the 'backend' and 'frontend' directories for instructions on how to run the application locally for development.<br>
 ## Docker Instructions
